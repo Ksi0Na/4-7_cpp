@@ -18,7 +18,7 @@ include("cmake/HunterGate.cmake")
 HunterGate(
   URL "https://github.com/cpp-pm/hunter/archive/v0.23.278.tar.gz"
   SHA1 "35fa55bc1dfcf9f4d7264f8bb26cd1759ce1ae07"
-  LOCAL
+  #LOCAL
 )
 
 # TODO: rename project and delete this comment
@@ -49,7 +49,7 @@ add_library(HTTP STATIC
 )
 
 add_executable(demo
-  ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
 )
 
 target_include_directories(HTTP PUBLIC
